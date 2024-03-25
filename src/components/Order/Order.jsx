@@ -4,12 +4,12 @@ function Order({ loading, orderId }) {
   return (
     <>
       {loading && (
-        <Loader message={'Creando orden...'} />
+        <Loader message={'Estamos creando tu pedido!! 👌👌'} />
       )}
 
       {orderId && (
         <div className='d-flex h-100 justify-content-center align-items-center text-center balance fs-4'>
-          <p>Orden creada - ID: {orderId}</p>
+          <p>Aqui tienes tu pedido! Acuerdate de conservar el ID: <strong>{orderId}</strong></p>
         </div>
       )}
     </>
